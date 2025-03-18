@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Conference ticket generator</title>
+  </head>
+  <body class="background-images">
+    <div class="lines-div">
+      <img class="lines lines-left" src="/assets/images/pattern-lines.svg" alt="">
+      <div>
+        <img class="lines lines-right" src="/assets/images/pattern-lines.svg" alt="">
+      </div>
+    </div>
+    <div class="main-container">
+      <img class="squiggle-bottom" src="/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="">
+      <img class="squiggle-top" src="/assets/images/pattern-squiggly-line-top.svg" alt="">
+      <img class="circle circle-top" src="/assets/images/pattern-circle.svg" alt="">
+      <header>
+        <div class="header-img-div">
+          <img class="header-img" src="/assets/images/logo-full.svg" alt="" />
+        </div>
+        <h1 class="header-title">
+          Your Journey to Coding <br class="small-screen" />
+          Conf <br class="big-screen"> 2025 Starts Here!
+        </h1>
+        <p class="header-text">
+          Secure your spot at next year's <br class="small-screen"/>
+          biggest coding conference.
+        </p>
+      </header>
+
+      <main>
+        <img class="circle circle-mid" src="/assets/images/pattern-circle.svg" alt="">
+        <p class="upload-header">Upload Avatar</p>
+        <div class="upload-container">
+          <input
+            class="upload-input"
+            type="file"
+            id="file-input"
+            class="hidden"
+          />
+          <label for="file-input"
+            ><div class="upload-img">
+              <img src="/assets/images/icon-upload.svg" alt="">  
+            </div
+          ></label>
+          <p>Drag and drop or click to upload</p>
+        </div>
+        <div class="upload-footer">
+          <img class="upload-footer-img" src="/assets/images/icon-info.svg" alt="">
+          <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+        </div>
+
+        <div class="input-container">
+          <ul class="input-fields">
+            <li class="name-field">
+              <p>Full Name</p>
+              <input class="text-field" type="text" />
+            </li>
+            <li class="email-field">
+              <p>Email Address</p>
+              <input
+                class="text-field"
+                type="text"
+                placeholder="example@email.com"
+              />
+            </li>
+            <li class="github-field">
+              <p>GitHub Username</p>
+              <input
+                class="text-field"
+                type="text"
+                placeholder="@yourusername"
+              />
+            </li>
+            <li class="generate-field">
+              <button class="btn">Generate My Ticket</button>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
